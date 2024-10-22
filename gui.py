@@ -57,11 +57,12 @@ def run_random_selection():
 # Function to refresh the reference folder list
 def update_refs():
     ref_folder = os.path.join(os.getcwd(), "ref")
+    ref_listbox.delete(0, tk.END)  # Clear the reference list
     if os.path.exists(ref_folder):
-        ref_listbox.delete(0, tk.END)  # Clear the reference list
         ref_folders = sorted([d for d in os.listdir(ref_folder) if os.path.isdir(os.path.join(ref_folder, d))])
         for folder in ref_folders:
             ref_listbox.insert(tk.END, folder)
+        
 
 # Function to open the selected reference folder in file explorer
 def open_ref_folder(event):

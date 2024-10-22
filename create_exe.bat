@@ -1,1 +1,1 @@
-pyinstaller --onefile --noconsole gui.py
+pyinstaller --name refboard --onefile --noconsole gui.py

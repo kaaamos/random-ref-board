@@ -32,10 +32,6 @@ def copy_random_images(folder_paths, num_images):
             shutil.copy(image, target_folder)
             log_entry = f"Copied: {image} to {target_folder}\n"
             log_file.write(log_entry)
-            print(log_entry.strip())  # Print to console as well
-
-    print(f"All images copied to folder: {target_folder}")
-    print(f"Log file created at: {log_file_path}")
 
 def find_images(folder_paths):
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif')
