@@ -3,4 +3,5 @@ Creates a folder with x random images from the folders (and subfolders) in the i
 
 Use with programs like PureRef to create random moodboards. Be inspired by randomness.
 
-![image](https://github.com/user-attachments/assets/f0934404-d0e1-4c9f-88d4-11b4f99f5fe7)
+![image](https://github.com/user-attachments/assets/6c492510-a528-40ec-a608-7238c0079744)
+
