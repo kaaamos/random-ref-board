@@ -8,7 +8,7 @@ def copy_random_images(folder_paths, num_images):
     # Check if there are enough images
     if len(images) < num_images:
         print(f"Error: Not enough images found. Found {len(images)} images.")
-        return
+        raise ValueError
 
     # Select random images
     selected_images = random.sample(images, num_images)
@@ -34,7 +34,7 @@ def copy_random_images(folder_paths, num_images):
             log_file.write(log_entry)
 
 def find_images(folder_paths):
-    image_extensions = ('.jpg', '.jpeg', '.png', '.gif')
+    image_extensions = ('.jpg', '.jpeg', '.png')
     image_files = []
     for folder_path in folder_paths:
         for root, dirs, files in os.walk(folder_path):
