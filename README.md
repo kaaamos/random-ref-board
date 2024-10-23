@@ -1,5 +1,5 @@
 # random-ref-board
-Creates a folder with x random images from the folders (and subfolders) in the input.
+Creates a folder with x random copied images from the folders (and subfolders) in the input.
 
 Use with programs like PureRef to create random moodboards.
 
