@@ -26,7 +26,7 @@ def copy_random_images(folder_paths, num_images):
 
     # Create a log file for this folder
     log_file_path = os.path.join(logs_folder, f"{folder_number:02d}.txt")
-    with open(log_file_path, 'w') as log_file:
+    with open(log_file_path, 'w', encoding='utf-8') as log_file:
         # Copy selected images to the new folder and log the paths
         for image in selected_images:
             shutil.copy(image, target_folder)
